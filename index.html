@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style.css">
+	
+	<title>Responsive Design</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="top-site">
+			<div class="hero-section">
+				<h2>Abdulwaasi's pastery services</h2>
+				<p>Pretty delicious pasteries</p>
+			</div>
+			<div class="amount item1">
+				<p class="price">$1.99</p>
+				<p>Egg roll</p>
+			</div>
+			<div class="amount item2">
+				<p class="price">$3.99</p>
+				<p>Small chops</p>
+			</div>
+
+		</div>
+		<nav class="main-nav">
+			<button aria-expanded="false" aria-controls="menu-list" class="btn">
+				<span class="open">&#9776;</span>
+				<span class="close">&#10005;</span>
+				Menu
+			</button>
+			<ul class="menu-list">
+				<li><a href="#">Taco</a></li>
+				<li><a href="#">Cookies</a></li>
+				<li><a href="#">Deserts</a></li>
+				<li><a href="#">Drinks</a></li>
+				<li><a href="#">Reservations</a></li>
+			</ul>
+		</nav>
+		<div class="foods">
+			<div class="food">
+				 <span class="icon">🌮</span>
+				<h3>Taco</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus id unde voluptatem fugiat. Laudantium accusantium, eos quidem. Sapiente, laudantium?</p>
+			</div>
+			<div class="food">
+				  <span class="icon">🍺</span>
+				<h3>Youghuts</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus id unde voluptatem fugiat. Laudantium accusantium, eos quidem. Sapiente, laudantium?</p>
+			</div>
+			<div class="food">
+				 <span class="icon">🍷</span>
+				<h3>Fruit Drinks</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus id unde voluptatem fugiat. Laudantium accusantium, eos quidem. Sapiente, laudantium?</p>
+			</div>
+			<div class="food">
+				<span class="icon">🎵</span>
+				<h3>Reservations</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus id unde voluptatem fugiat. Laudantium accusantium, eos quidem. Sapiente, laudantium?</p>
+			</div>
+		</div>
+		<div class="features">
+			<img src="images/queso-taco.png" alt="taco">
+			<div class="feature-text">
+				<h3>Featured Taco</h3>
+				<p>Slim profile, easy to hold and loaded with cheese</p>
+				<p>This is the one you have been waiting for.</p>
+				<button>Learn More →</button>
+			</div>
+		</div>
+		<div class="gallery">
+			<h2>Instant Grams</h2>
+			<img src="https://source.unsplash.com/random/300x300" alt="image one">
+			<img src="https://source.unsplash.com/random/300x301" alt="image two">
+			<img src="https://source.unsplash.com/random/300x302" alt="image three">
+			<img src="https://source.unsplash.com/random/300x303" alt="image four">
+			<img src="https://source.unsplash.com/random/300x304" alt="image five">
+			<img src="https://source.unsplash.com/random/300x305" alt="image six">
+			<img src="https://source.unsplash.com/random/300x306" alt="image seven">
+			<img src="https://source.unsplash.com/random/300x307" alt="image eight">
+			<img src="https://source.unsplash.com/random/300x308" alt="image nine">
+			
+		</div>
+	</div>
+
+ <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+
+  </script>
+</body>
+</html>
